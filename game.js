@@ -2,7 +2,7 @@
 // var target = "Meowth";
 // var hits = 0;
 
-var meowth = new Target('Meowth')
+var me = new Target('Meowth')
 
 var backpackItems= {
     paralyzePotion: new Item("Paralyze Potion", 0.5, "It cannot move."),
@@ -19,9 +19,9 @@ function Target(name){
 }
 function addMods(){
     var totalMods = 1
-    for (var i = 0; i < meowth.items.length; i++) {
+    for (var i = 0; i < me.items.length; i++) {
         //alias the thing the loop is currently accessing
-        var item = meowth.items[i];
+        var item = me.items[i];
         totalMods += item.modifier;
     }
     return totalMods
@@ -30,8 +30,8 @@ function addMods(){
 }
 
 function giveItem(itemName){
-    meowth.items.push(backpackItems[itemName])
-    console.log(meowth.items)
+    me.items.push(backpackItems[itemName])
+    console.log(me.items)
     //where you are pushing.push(where it goes)
 }
 
@@ -42,27 +42,27 @@ function Item(name, modifier, description){
 }
 
 function quickAttack() {
-    meowth.health -= 1 * addMods()
+    me.health -= 1 * addMods()
     //alert(health);
-    meowth.hits++
+    me.hits++
     drawUpdate()
 }
 function thunderBolt() {
-    meowth.health = (meowth.health-5)
+    me.health = (me.health-5)
     //alert(health);
-    meowth.hits++
+    me.hits++
     drawUpdate()
 }
 function ironTail() {
-    meowth.health = (meowth.health-10)
+    me.health = (me.health-10)
     //alert(health);
-    meowth.hits++
+    me.hits++
     drawUpdate()
 }
 function drawUpdate() {
 
-    document.getElementById("health").innerText = meowth.health;
-    document.getElementById("hits").innerText = meowth.hits;
+    document.getElementById("health").innerText = me.health;
+    document.getElementById("hits").innerText = me.hits;
 
 
 }
