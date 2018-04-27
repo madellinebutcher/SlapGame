@@ -1,29 +1,48 @@
-var health = 100;
-var target = "Meowth";
-var hits = 0;
+// var health = 100;
+// var target = "Meowth";
+// var hits = 0;
+
+var meowth = new Target('Meowth')
+var backpack = {
+    paralyzePotion: new Item("Paralyze Potion", 5, "It is Paralyzed.")
+    
+
+}
+
+function Target(name){
+    this.name = name;
+    this.health = 100;
+    this.hits = 0;
+}
+
+function Item(name, modifier, description){
+    this.name = name;
+    this.modifier = modifier;
+    this.description = description;
+}
 
 function quickAttack() {
-    health--
+    meowth.health--
     //alert(health);
-    hits++
+    meowth.hits++
     drawUpdate()
 }
 function thunderBolt() {
-    health = (health-5)
+    meowth.health = (meowth.health-5)
     //alert(health);
-    hits++
+    meowth.hits++
     drawUpdate()
 }
 function ironTail() {
-    health = (health-10)
+    meowth.health = (meowth.health-10)
     //alert(health);
-    hits++
+    meowth.hits++
     drawUpdate()
 }
 function drawUpdate() {
 
-    document.getElementById("health").innerText = health;
-    document.getElementById("hits").innerText = hits;
+    document.getElementById("health").innerText = meowth.health;
+    document.getElementById("hits").innerText = meowth.hits;
 
 
 }
