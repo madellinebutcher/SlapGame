@@ -5,9 +5,9 @@
 var meowth = new Target('Meowth')
 
 var backpackItems= {
-    paralyzePotion: new Item("Paralyze Potion", 5, "It cannot move."),
-    pokeToy: new Item("Poke Toy", 10, "It is distracted."),
-    xAttack: new Item("X Attack", 15, "Increased attack power.")
+    paralyzePotion: new Item("Paralyze Potion", 0.5, "It cannot move."),
+    pokeToy: new Item("Poke Toy", .75, "It is distracted."),
+    xAttack: new Item("X Attack", 1, "Increased attack power.")
 }
 
 function Target(name){
@@ -17,9 +17,21 @@ function Target(name){
     this.items= [];
 
 }
+function addMods(){
+    var totalMods = 1
+    for (var i = 0; i < meowth.items.length; i++) {
+        //alias the thing the loop is currently accessing
+        var item = meowth.items[i];
+        totalMods += item.modifier;
+    }
+    return totalMods
+    //ends function
+    //call funtion = runs through function
+}
 
 function giveItem(itemName){
     meowth.items.push(backpackItems[itemName])
+    console.log(meowth.items)
     //where you are pushing.push(where it goes)
 }
 
@@ -30,7 +42,7 @@ function Item(name, modifier, description){
 }
 
 function quickAttack() {
-    meowth.health--
+    meowth.health -= 1 * addMods()
     //alert(health);
     meowth.hits++
     drawUpdate()
@@ -54,5 +66,5 @@ function drawUpdate() {
 
 
 }
-giveItem()
+
 drawUpdate()
