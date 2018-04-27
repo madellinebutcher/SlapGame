@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pokemon Game</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel"stylesheet" href="assets/styles/game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel "stylesheet" href="assets/styles/game.css">
 </head>
+
 <body>
-    
+    <header class="row">
+        <div class="col-5">
+            <span>Health:
+                <span id="health">--</span>
+            </span>
+        </div>
+        <div class="col-1"></div>
+        <span>Health:
+        <span id="healthOpp">--</span>
+        </span>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col">
+            <img src="assets/pikachu.png" width="200px" alt="pikachu">
+        </div>
+        <div class="col">
+            <img src="assets/gengar.png" width="200px" alt="pikachu">
+        </div>
+    </div>
+    <footer>
+        <button onclick="quickAttack()">Quick Attack</button>
+    </footer>
+    <script src="game.js"></script>
 </body>
+
 </html>
