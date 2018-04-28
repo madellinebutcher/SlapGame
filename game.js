@@ -31,8 +31,7 @@ function addMods(){
 
 function giveItem(itemName){
     me.items.push(backpackItems[itemName])
-    console.log(me.items)
-    //where you are pushing.push(where it goes)
+    //where you are pushing.push(where it is at)
 }
 
 function Item(name, modifier, description){
