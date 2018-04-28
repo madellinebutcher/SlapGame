@@ -8,41 +8,41 @@
     <title>Pokemon Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link rel "stylesheet" href="assets/styles/game.css">
+    <link rel="stylesheet" href="assets/styles/game.css">
 </head>
 
 <body>
     <header class="row">
-        <div class="col">
-            <span>Name:
-                <span id="target">Meowth</span>
+        <div class="col d-flex justify-content-end">
+            <span>Name: 
+                <span id="target">Meowth </span>
             </span>
-            <span>Health:
-                <span id="health">--</span>
+            <span>Health:<span id="health">--</span>
             </span>
-            <span>Hits:
-                <span id="hits">--</span>
+            <span>Hits:<span id="hits">--</span>
             </span>
         </div>
     </header>
     <div class="row">
-        <div class="col">
-            <img src="assets/mweoth.png" width="200px" alt="meowth">
+        <div class="col d-flex justify-content-center">
+            <img src="assets/mweoth.png" width="200px" height="175px" alt="meowth">
         </div>
     </div>
     <footer>
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-center">
                 <button onclick="quickAttack()">Quick Attack</button>
                 <button onclick="thunderBolt()">Thunder Bolt</button>
                 <button onclick="ironTail()">Iron Tail</button>
             </div>
-            <div class="col-12">
-                <h5>ITEMS</h5>
+            <div class="col-12 d-flex justify-content-center">
+                <h5>BACKPACK</h5>
+            </div>
+            <div class="col-12 d-flex justify-content-center">   
                 <button onclick="giveItem('paralyzePotion')">Paralyze Potion</button>
                 <button onclick="giveItem('pokeToy')">Poke Toy</button>
                 <button onclick="giveItem('xAttack')">X Attack</button>
-            </div>
+            </div> 
         </div>
     </footer>
     <script src="game.js"></script>
