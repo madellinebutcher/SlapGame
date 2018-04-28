@@ -47,13 +47,13 @@ function quickAttack() {
     drawUpdate()
 }
 function thunderBolt() {
-    me.health = (me.health-5)
+    me.health -= 5 * addMods()
     //alert(health);
     me.hits++
     drawUpdate()
 }
 function ironTail() {
-    me.health = (me.health-10)
+    me.health -= 10 * addMods()
     //alert(health);
     me.hits++
     drawUpdate()
