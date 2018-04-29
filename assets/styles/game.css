@@ -5,7 +5,7 @@ body{
     height:auto;
     font-weight: bold;
 }
-span{
+.smargin{
     margin-right: 1vw;
 }
 button{
