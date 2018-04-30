@@ -8,6 +8,7 @@ body{
 .smargin{
     margin-right: 1vw;
 }
+
 button{
     margin-right: 1vw;
 }
@@ -17,7 +18,7 @@ button{
 }
 
 header{
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 .bph{
     margin-right:9vw;
@@ -25,4 +26,7 @@ header{
 }
 #target{
     color:sandybrown;
+}
+#player{
+    color:yellow;
 }

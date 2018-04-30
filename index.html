@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <header class="row">
-        <div class="col d-flex justify-content-end">
+    <header class="row" style="margin-left:35vw;">
+        <div class="col d-flex justify-content-center ">
             <span class="smargin">Name:
                 <span id="target">Meowth </span>
             </span>
@@ -28,18 +28,30 @@
     </header>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <img class"meowimg" src="assets/mweoth.png" width="250px" height="225px" alt="meowth">
+            <img class="meowimg" src="assets/mweoth.png" width="250px" height="225px" alt="meowth">
         </div>
     </div>
     <footer>
-        <div class="row container">
-            <div class="d-flex justify-content-start">
-                <img src="assets/PikachuBehind.png" width="250px" height="225px" alt="PikachuBehind">
+        <div class="row container" style="margin-left:20vw;">
+            <div class="col-12">
+                <img class="" src="assets/PikachuBehind.png" width="250px" height="225px" alt="PikachuBehind">
             </div>
             <div class="col-12">
-                <button onclick="quickAttack()">Quick Attack</button>
-                <button onclick="thunderBolt()">Thunder Bolt</button>
-                <button onclick="ironTail()">Iron Tail</button>
+                    <span class="smargin">Name:
+                        <span id="player">Pikachu </span>
+                    </span>
+                    <span class="smargin">Lv25</span>
+                    <span class="smargin">Health:
+                        <span id="playerHealth">100</span>
+                    </span>
+                    <!-- <span class="smargin">Hits:
+                        <span id="playerHits">--</span>
+                    </span> -->
+                </div>
+            <div class="col-12">
+                <button class="btn-warning" onclick="quickAttack()">Quick Attack</button>
+                <button class="btn-warning" onclick="thunderBolt()">Thunder Bolt</button>
+                <button class="btn-warning" onclick="ironTail()">Iron Tail</button>
             </div>
             <div class="col-12">
                 <h5 class="bph">BACKPACK</h5>
