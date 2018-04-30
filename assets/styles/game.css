@@ -11,17 +11,18 @@ body{
 button{
     margin-right: 1vw;
 }
-img{
-    margin-top: 6vh;
-    margin-bottom: 3vh;
+.meowimg{
+    margin-top: 5vh;
+    margin-left: 35vw;
 }
-button{
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
+
 header{
     margin-top: 5vh;
 }
 .bph{
     margin-right:9vw;
+    margin-top: 1vh;
+}
+#target{
+    color:sandybrown;
 }

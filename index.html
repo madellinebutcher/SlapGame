@@ -14,39 +14,41 @@
 <body>
     <header class="row">
         <div class="col d-flex justify-content-end">
-            <span class="smargin">Name: 
+            <span class="smargin">Name:
                 <span id="target">Meowth </span>
             </span>
             <span class="smargin">Lv5</span>
-            <span class="smargin">Health:<span id="health">--</span>
+            <span class="smargin">Health:
+                <span id="health">--</span>
             </span>
-            <span class="smargin">Hits:<span id="hits">--</span>
+            <span class="smargin">Hits:
+                <span id="hits">--</span>
             </span>
         </div>
     </header>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <img src="assets/mweoth.png" width="250px" height="225px" alt="meowth">
+            <img class"meowimg" src="assets/mweoth.png" width="250px" height="225px" alt="meowth">
         </div>
     </div>
     <footer>
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-                <h5>ATTACK MOVES</h5>
+        <div class="row container">
+            <div class="d-flex justify-content-start">
+                <img src="assets/PikachuBehind.png" width="250px" height="225px" alt="PikachuBehind">
             </div>
-            <div class="col-12 d-flex justify-content-center">    
+            <div class="col-12">
                 <button onclick="quickAttack()">Quick Attack</button>
                 <button onclick="thunderBolt()">Thunder Bolt</button>
                 <button onclick="ironTail()">Iron Tail</button>
             </div>
-            <div class="col-12 d-flex justify-content-end">
-                <h5 class="bph" >BACKPACK</h5>
+            <div class="col-12">
+                <h5 class="bph">BACKPACK</h5>
             </div>
-            <div class="col-12 d-flex justify-content-end">   
+            <div class="col-12">
                 <button onclick="giveItem('paralyzePotion')">Paralyze Potion</button>
                 <button onclick="giveItem('pokeToy')">Poke Toy</button>
                 <button onclick="giveItem('xAttack')">X Attack</button>
-            </div> 
+            </div>
         </div>
     </footer>
     <script src="game.js"></script>
