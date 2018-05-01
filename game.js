@@ -40,6 +40,7 @@ function Item(name, modifier, description){
     this.description = description;
 }
 
+//consider how you could have these three functions condensed to one, hint: similar to how you handled Items
 function quickAttack() {
     me.health -= 1 * addMods()
     //alert(health);
@@ -67,3 +68,6 @@ function drawUpdate() {
 }
 
 drawUpdate()
+
+
+//Very clean and well done!
