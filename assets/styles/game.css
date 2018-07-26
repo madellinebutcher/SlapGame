@@ -4,6 +4,7 @@ body{
     background-size: cover;
     height:auto;
     font-weight: bold;
+    font-family: 'pokemon-font', monospace;
 }
 .smargin{
     margin-right: 1vw;
